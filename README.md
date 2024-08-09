@@ -17,9 +17,10 @@ Wykop.pl wrapped in Gmail-styled website
 - Adding new posts
 - Showing favourite posts
 - Showing specified tags
-
+![Idea](https://github.com/user-attachments/assets/0ecf14cf-2f70-492f-a988-51a4aa3a268f)
 
 ## Authors
+
 
 - [@PiotrDuda2004](https://www.github.com/PiotrDuda2004)
 
