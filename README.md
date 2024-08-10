@@ -1,7 +1,7 @@
 
 # WykopInbox
 
-Wykop.pl wrapped in Gmail-styled website
+Wykop.pl wrapped in Gmail-Styled Website
 
 ## Features
 
