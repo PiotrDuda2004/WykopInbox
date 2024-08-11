@@ -4,10 +4,15 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>1b50bd60-4b6c-4678-b627-7a77d22f070a</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="wwwroot\images\upperleft.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>

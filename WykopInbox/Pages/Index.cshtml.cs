@@ -14,6 +14,8 @@ namespace WykopInbox.Pages
 
         public void OnGet()
         {
+            CreateRequest createrequest = new CreateRequest();
+            createrequest.Main();
 
         }
     }
