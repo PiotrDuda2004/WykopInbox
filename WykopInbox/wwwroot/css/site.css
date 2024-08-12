@@ -49,3 +49,8 @@ header {
     height: 100%;
     width: 252px;
 }
+.main {
+    position: fixed;
+    top: 63px;
+    left: 252px;
+}

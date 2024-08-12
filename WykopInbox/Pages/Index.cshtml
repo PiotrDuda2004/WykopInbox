@@ -8,6 +8,16 @@
 <link href="css/site.css" rel="stylesheet" />
 <partial name="Shared/_Header.cshtml" />
 <partial name="Shared/_LeftBar.cshtml" />
+<div class="main">
+    <table>
+        @foreach (var el in Model.Values)
+        {
+            <tr>
+                @el.content
+                <hr>
+            </tr>
 
-
+        }
+    </table>
+</div>
 <script src="/_framework/aspnetcore-browser-refresh.js"></script>
