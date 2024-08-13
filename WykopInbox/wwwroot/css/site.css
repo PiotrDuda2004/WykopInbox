@@ -53,4 +53,20 @@ header {
     position: fixed;
     top: 63px;
     left: 252px;
+    width:50%;
+}
+td {
+    text-overflow: ellipsis;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: rgb(32, 33, 36);
+    background: #fff;
+    border-collapse: collapse;
+    border-bottom-color: rgb(128, 128, 128);
+    border-left-color: rgb(128, 128, 128);
+    border-right-color: rgb(128, 128, 128);
+    border-top-color: rgb(128, 128, 128);
+    font-weight: 700;
+    box-shadow: rgba(100, 121, 143, 0.12) 0px -1px 0px 0px inset;
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
 }
