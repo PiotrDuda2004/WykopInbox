@@ -7,7 +7,7 @@ Wykop.pl wrapped in Gmail-Styled Website
 
 - Showing hot posts from last 6 hours from https://wykop.pl/mikroblog
 - Showing comments to each posts
-- displaying upvotes
+- Displaying upvotes
 - Conecting to Wykop API v3.0
 - Gmail - based preview
 
