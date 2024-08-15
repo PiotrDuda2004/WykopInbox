@@ -1,12 +1,4 @@
-html {
-  font-size: 14px;
-}
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
@@ -59,7 +51,7 @@ td {
     text-overflow: ellipsis;
     padding-bottom: 10px;
     overflow: hidden;
-    width: 500px;
+    width: 864px;
     white-space: nowrap;
     padding-top: 10px;
     color: rgb(32, 33, 36);
@@ -69,10 +61,51 @@ td {
     border-left-color: rgb(128, 128, 128);
     border-right-color: rgb(128, 128, 128);
     border-top-color: rgb(128, 128, 128);
-    font-weight: 700;
     box-shadow: rgba(100, 121, 143, 0.12) 0px -1px 0px 0px inset;
+}
+table {
+    display: block;
+    width: 864px;
+}
+.time_created {
+    font-size: .875rem;
+    font-weight: 700;
+    white-space: nowrap;
+    float:right;
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+.author {
+    font-size: .875rem;
+    white-space: nowrap;
+    min-width: 200px;
+    float: left;
+    width: fit-content;
+    padding-left: 75px;
+    font-weight: 700;
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+.content_title {
+    width: 100%;
+    font-size: .875rem;
+    max-width: 100px;
+    white-space: nowrap;
+    padding-left: 175px;
+    font-weight: 700;
     font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
 }
 .checkbox {
-    background-image: url("../images/checkbox.png")
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    background-image: url("../images/checkbox.png");
+    opacity:0.32;
+}
+.favourite {
+    margin-left: 40px;
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    background-image: url("../images/fav.png");
+    opacity: 0.32;
 }
