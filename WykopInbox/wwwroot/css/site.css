@@ -58,6 +58,9 @@ header {
 td {
     text-overflow: ellipsis;
     padding-bottom: 10px;
+    overflow: hidden;
+    width: 500px;
+    white-space: nowrap;
     padding-top: 10px;
     color: rgb(32, 33, 36);
     background: #fff;
@@ -69,4 +72,7 @@ td {
     font-weight: 700;
     box-shadow: rgba(100, 121, 143, 0.12) 0px -1px 0px 0px inset;
     font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+.checkbox {
+    background-image: url("../images/checkbox.png")
 }
