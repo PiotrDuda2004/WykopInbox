@@ -14,7 +14,7 @@
         @foreach (var el in Model.Values)
         {
             <tr>
-                <td>
+                <td id="td @el.id" onclick="showEntry(this.id)">
                     <div class="checkbox"></div>
                     <div class="favourite"></div>
                     <div class="author">@el.author.username</div>
@@ -23,10 +23,20 @@
 
                 </td>
             </tr>
-
         }
     </table>
+    @foreach (var el in Model.Values)
+    {
+        <div class="entry_title" id=@el.id>@el.content.Substring(0, (el.content.Length > 40 ? 40 : el.content.Length))</div>
+    }
+
 </div>
 
-
+<script>
+    function showEntry(id) {
+        const elem = document.getElementById(id.slice(3));
+        elem.style.visibility = 'visible';
+        
+    }
+</script>
 <script src="/_framework/aspnetcore-browser-refresh.js"></script>

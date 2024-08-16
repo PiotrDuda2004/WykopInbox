@@ -127,3 +127,17 @@ table {
     background-image: url("../images/fav.png");
     opacity: 0.32;
 }
+.entry_title {
+    visibility : hidden;
+    top: -850px;
+    position: relative;
+    left: 880px;
+    float: left;
+    font-size: .875rem;
+    width: 100%;
+    max-width: 100px;
+    white-space: nowrap;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
