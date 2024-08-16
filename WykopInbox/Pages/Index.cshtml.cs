@@ -45,6 +45,7 @@ namespace WykopInbox.Pages
             {
                 Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(responseBody);
                 this.Values = myDeserializedClass.data;
+             
                 Console.WriteLine(responseBody);
 
                 foreach (var el in myDeserializedClass.data)

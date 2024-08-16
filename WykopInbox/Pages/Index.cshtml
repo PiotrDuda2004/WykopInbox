@@ -3,11 +3,11 @@
 @{
     ViewData["Title"] = "Home page";
 }
-
 <!DOCTYPE html>
 <link href="css/site.css" rel="stylesheet" />
 <partial name="Shared/_Header.cshtml" />
 <partial name="Shared/_LeftBar.cshtml" />
+<partial name="Shared/_TopBar.cshtml" />
 
 <div class="main">
     <table>
@@ -18,8 +18,8 @@
                     <div class="checkbox"></div>
                     <div class="favourite"></div>
                     <div class="author">@el.author.username</div>
-                    <div class="content_title">@el.content</div>
-                    <div class="time_created">@el.created_at</div>
+                    <div class="content_title">@el.content.Substring(0, (el.content.Length > 70 ? 70 : el.content.Length))</div>
+                    <div class="time_created">@el.created_at.Substring(el.created_at.Length - 8,5)</div>
 
                 </td>
             </tr>

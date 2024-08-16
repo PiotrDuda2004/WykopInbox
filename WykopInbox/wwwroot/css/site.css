@@ -41,9 +41,13 @@ header {
     height: 100%;
     width: 252px;
 }
+.topbar{
+    position:fixed;
+    left:252px;
+}
 .main {
     position: fixed;
-    top: 63px;
+    top: 108px;
     left: 252px;
     width:50%;
 }
@@ -64,14 +68,24 @@ td {
     box-shadow: rgba(100, 121, 143, 0.12) 0px -1px 0px 0px inset;
 }
 table {
+    height:843px;
+    overflow-x: hidden;
+    overflow-y: scroll;
     display: block;
     width: 864px;
 }
+
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
 .time_created {
-    font-size: .875rem;
+    -webkit-font-smoothing: antialiased;
+    font-size: .75rem;
     font-weight: 700;
     white-space: nowrap;
-    float:right;
+    float: right;
     font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
 }
 .author {
@@ -80,32 +94,36 @@ table {
     min-width: 200px;
     float: left;
     width: fit-content;
-    padding-left: 75px;
+    margin-left: 20px;
     font-weight: 700;
     font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
 }
 .content_title {
-    width: 100%;
+    float:left;
     font-size: .875rem;
+    width:100%;
     max-width: 100px;
     white-space: nowrap;
-    padding-left: 175px;
     font-weight: 700;
+    -webkit-font-smoothing:antialiased;
     font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+.content_title::after{
+    content:"...";
 }
 .checkbox {
     margin-left: 10px;
     height: 20px;
     width: 20px;
-    position: fixed;
+    float:left;
     background-image: url("../images/checkbox.png");
     opacity:0.32;
 }
 .favourite {
-    margin-left: 40px;
+    margin-left: 5px;
+    float:left;
     height: 20px;
     width: 20px;
-    position: fixed;
     background-image: url("../images/fav.png");
     opacity: 0.32;
 }
