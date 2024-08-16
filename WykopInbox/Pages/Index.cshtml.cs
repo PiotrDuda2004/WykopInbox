@@ -18,7 +18,10 @@ namespace WykopInbox.Pages
         {
             _logger = logger;
         }
-
+        private void CreateWebName()
+        {
+            Console.WriteLine("dsd");
+        }
 
         public List<Datum> Values { get; set; }
         public async Task OnGetAsync()
