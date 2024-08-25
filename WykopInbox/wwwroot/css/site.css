@@ -127,7 +127,12 @@ table {
     background-image: url("../images/fav.png");
     opacity: 0.32;
 }
+right_bar {
+
+}
 .entry {
+    overflow-y: scroll;
+    height: 843px;
     visibility: hidden;
     -webkit-font-smoothing: antialiased;
     font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
@@ -151,11 +156,11 @@ table {
     left:1730px;
     top:110px;
 }
-.entry_image {
+.entry_author_image {
     padding: 0 16px;
     float: left;
 }
-.entry_image img {
+.entry_author_image img {
     clip-path: circle();
     height: 40px;
     width: 40px;
@@ -186,7 +191,6 @@ table {
     top: 180px;
 }
 .entry_content_value {
-    text-indent: -10px;
     white-space: break-spaces;
     color: rgb(34, 34, 34);
     font-size: 13px;
@@ -197,3 +201,11 @@ table {
     padding-right: 330px;
     text-overflow: ellipsis;
 }
+.entry_image {
+    float: left;
+
+}
+.entry_image img {
+    width: 100%;
+    max-width: 600px;
+ }
