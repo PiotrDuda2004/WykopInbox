@@ -1,9 +1,9 @@
-
+ 
 # WykopInbox
 
 Wykop.pl wrapped in Gmail-Styled Website
 
-## Features
+## Features 
 
 - Showing hot posts from last 6 hours from https://wykop.pl/mikroblog
 - Showing comments to each posts
