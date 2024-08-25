@@ -132,6 +132,7 @@ right_bar {
 }
 .entry {
     overflow-y: scroll;
+    overflow-x: hidden;
     height: 843px;
     visibility: hidden;
     -webkit-font-smoothing: antialiased;
