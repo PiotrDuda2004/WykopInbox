@@ -27,14 +27,48 @@
     </table>
     @foreach (var el in Model.Values)
     {
-        <div class="entry_title" id=@el.id>@el.content.Substring(0, (el.content.Length > 40 ? 40 : el.content.Length))</div>
+        <div class="entry" id=@el.id>
+            <div class="entry_title" >
+                @el.content.Substring(0, (el.content.Length > 40 ? 40 : el.content.Length))
+            </div>
+            <div class="entry_title_icons">
+                <img src="~/images/entry_title_icons.png" alt="Alternate Text" />
+            </div>
+            <div class="entry_content">
+                <div class="entry_image">
+                    <img src="@el.author.avatar" alt="Alternate Text" />
+                </div>
+                <div class="entry_author">
+                    @el.author.username
+                </div>
+                <div class="entry_mail">
+                    &lt;@el.author.username@Html.Raw("@")gmail.com&gt;
+                </div>
+                <div class="entry_time_created">
+                    @el.created_at
+                </div>
+                <div class="entry_comment_icons">
+                    <img src="~/images/entry_comment_icons.png" alt="Alternate Text" />
+                </div>
+                <div class="entry_content_value">
+                    @el.content
+
+                </div>
+            </div>
+        </div>
     }
 
 </div>
 
 <script>
     function showEntry(id) {
+        document.getElementById(id).getElementsByClassName('content_title')[0].style.fontWeight = '400';
+        document.getElementById(id).getElementsByClassName('author')[0].style.fontWeight = '400';
+        document.getElementById(id).getElementsByClassName('time_created')[0].style.fontWeight = '400';
+        document.getElementById(id).style.background = 'rgb(242, 246, 252)';
+        for (let el of document.querySelectorAll('.entry')) el.style.display = 'none';
         const elem = document.getElementById(id.slice(3));
+        elem.style.display = 'initial';
         elem.style.visibility = 'visible';
         
     }
