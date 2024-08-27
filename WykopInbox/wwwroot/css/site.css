@@ -152,6 +152,10 @@ right_bar {
     -webkit-font-smoothing: antialiased;
     font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
 }
+ .entry_title::after {
+    content: "...";
+
+ }
 .entry_title_icons{
     position:fixed;
     left:1730px;
