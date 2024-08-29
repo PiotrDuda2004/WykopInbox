@@ -209,10 +209,6 @@ table {
     padding-right: 330px;
     text-overflow: ellipsis;
 }
-.entry_image {
-    float: left;
-
-}
 .entry_image img {
     width: 100%;
     max-width: 600px;
