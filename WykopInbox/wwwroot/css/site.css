@@ -127,19 +127,22 @@ table {
     background-image: url("../images/fav.png");
     opacity: 0.32;
 }
-right_bar {
-
-}
-.entry {
+.right_bar {
     overflow-y: scroll;
     overflow-x: hidden;
     height: 843px;
-    visibility: hidden;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
     top: -850px;
     position: relative;
     left: 880px;
+    float: left;
+    width:864px;
+}
+.entry {
+
+    width:864px;
+    visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
     float: left;
 }
 .entry_title {

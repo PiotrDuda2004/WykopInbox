@@ -62,7 +62,40 @@
                     </div>
                 }
             </div>
+            @foreach(var il in el.comments.items)
+            {
+            <div class="entry_content">
+                <div class="entry_author_image">
+                    <img src="@il.author.avatar" alt="Alternate Text" />
+                </div>
+                <div class="entry_author">
+                    @il.author.username
+                </div>
+                <div class="entry_mail">
+                    &lt;@el.author.username@Html.Raw("@")gmail.com&gt;
+                </div>
+                <div class="entry_time_created">
+                    @el.created_at
+                </div>
+                <div class="entry_comment_icons">
+                    <img src="~/images/entry_comment_icons.png" alt="Alternate Text" />
+                </div>
+                <div class="entry_content_value">
+                    @el.content
+
+                </div>
+                @if (el.media.photo != null)
+                {
+                    <div class="entry_image">
+                        <img src="@el.media.photo.url" alt="Alternate Text" />
+                    </div>
+                }
             </div>
+
+            }
+        </div>
+        
+
     }
     </div>
 </div>
